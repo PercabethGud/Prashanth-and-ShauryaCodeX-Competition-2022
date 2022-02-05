@@ -1,0 +1,112 @@
+body{
+  background-image:url(bckg.jpeg);
+  background-repeat:none;
+  background-size:cover;
+}
+#navigation{
+  margin-left:24vw;
+  margin-top:2vw;
+  background-image:url(greenbrick.jpeg);
+  border: 0.3vw solid black;
+  border-radius:2vw;
+  height:4vw;
+  width:53vw;
+}
+#header{
+  background-image:url(bricky.png);
+  height:90px;
+  width:98vw;
+  border:3px solid brown;
+  border-radius:25px;
+}
+.navbar{
+  list-style-type: none;
+  float: left;
+  margin-right:0.476vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+a{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: wheat;
+  border-radius:15px;
+	background-color:blue;
+}
+marquee{
+  color:white;
+  font-family:Helvetica;
+  font-size:45;
+}
+a:hover{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: blue;
+  border-radius:15px;
+	background-color:wheat;
+}
+table{
+	margin-left:1.665vw;
+  margin-top:45px;
+	color:aliceblue;
+	font-family:Helvetica;
+}
+.head{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  margin-left:1.665vw;
+}
+.enter{
+	border-radius:67px;
+	padding:10px;
+	font-family:Helvetica;
+	border-color:aliceblue;
+  padding:15px;
+	color:black;
+}
+.enter:hover{
+	background-color:black;
+	color:white;
+}
+
+input[type=text]{
+ border: 2px solid gainsboro;
+ border-radius: 4px;
+
+}
+input[type=date]{
+	border: 2px solid gainsboro;
+	 border-radius: 4px;
+}
+input[type=password]{
+	border: 2px solid gainsboro;
+	 border-radius: 4px;
+}
+
+.user{
+ color:black;
+ margin-left:3.727vw;
+}
+.label{
+	font-family:Helvetica;
+	color:aliceblue;
+	margin-left:3.727vw;
+}
+#reg{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:530px;
+  width:96;
+  border:3px solid brown;
+  border-radius:25px;
+  padding:10px;
+}

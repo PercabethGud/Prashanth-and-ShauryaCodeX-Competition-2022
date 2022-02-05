@@ -1,0 +1,98 @@
+body{
+  background-image:url(bckg.jpeg);
+  background-repeat:none;
+  background-size:cover;
+}
+#navigation{
+  margin-left:24vw;
+  margin-top:2vw;
+  background-image:url(greenbrick.jpeg);
+  border: 0.3vw solid black;
+  border-radius:2vw;
+  height:4vw;
+  width:53vw;
+}
+#header{
+  background-image:url(bricky.png);
+  height:90px;
+  width:98vw;
+  border:3px solid brown;
+  border-radius:25px;
+}
+.navbar{
+  list-style-type: none;
+  float: left;
+  margin-right:0.476vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+a{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: wheat;
+  border-radius:15px;
+	background-color:blue;
+}
+marquee{
+  color:white;
+  font-family:Helvetica;
+  font-size:45;
+}
+a:hover{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: blue;
+  border-radius:15px;
+	background-color:wheat;
+}
+#insp{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:530px;
+  width:600px;
+  border:3px solid brown;
+  border-radius:25px;
+  padding:10px;
+  float:left;
+}
+.ins{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+}
+#insh{
+  color:white;
+  text-align:center;
+  font-family:Helvetica;
+}
+.aur{
+  color:white;
+  text-align:center;
+  font-family:Helvetica;
+}
+#au{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:530px;
+  width:600px;
+  border:3px solid brown;
+  border-radius:25px;
+  padding:10px;
+  float:right;
+}
+#blb{
+  margin-left:170px
+}
+#but{
+  margin-left:170px
+}

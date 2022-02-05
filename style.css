@@ -1,0 +1,140 @@
+body{
+  background-image:url(bckg.jpeg);
+  background-repeat:none;
+  background-size:cover;
+}
+#navigation{
+  margin-left:24vw;
+  margin-top:2vw;
+  background-image:url(greenbrick.jpeg);
+  border: 0.3vw solid black;
+  border-radius:2vw;
+  height:4vw;
+  width:53vw;
+}
+#header{
+  background-image:url(bricky.png);
+  height:90px;
+  width:98vw;
+  border:3px solid brown;
+  border-radius:25px;
+}
+.navbar{
+  list-style-type: none;
+  float: left;
+  margin-right:0.476vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+a{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: wheat;
+  border-radius:15px;
+	background-color:blue;
+}
+marquee{
+  color:white;
+  font-family:Helvetica;
+  font-size:45;
+}
+a:hover{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: blue;
+  border-radius:15px;
+	background-color:wheat;
+}
+#intro{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:325px;
+  width:97vw;
+  border:3px solid brown;
+  border-radius:25px;
+  padding:8px;
+}
+#dmana{
+  padding-left:39.5vw;
+}
+
+#redirects{
+  background-image:url(greenbrick.jpeg);
+  border: 5px solid black;
+  border-radius:11vw;
+  height:135px;
+  width:98.1vw;
+  padding:3px;
+  background-repeat:none;
+  background-size:cover;
+}
+.navr{
+  list-style-type: none;
+  float: left;
+  margin-left:26.963vw;
+  margin-right:10vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+.navre{
+  list-style-type: none;
+  float: left;
+  margin-right:10vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+
+.bsize{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.791vw;
+  padding:10px;
+  color: wheat;
+  border-radius:15px;
+	background-color:blue;
+}
+
+.bsize:hover{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.791vw;
+  padding:10px;
+  color: blue;
+  border-radius:15px;
+	background-color:wheat;
+}
+#ngos{
+  font-family:Helvetica;
+  text-decoration:none;
+	width:23.791vw; 
+  text-align:center;
+  margin-left:38.858vw;
+  margin-right:0.793vw;
+  border-radius:15px;
+	background-color:blueviolet;
+  color:wheat;
+  border:3px solid black;
+}
+#quote{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:55px;
+  width:98.414vw;
+  border:3px solid brown;
+  border-radius:25px;
+}
+#quot{
+  margin-left:25.377vw;
+}

@@ -1,0 +1,104 @@
+body{
+  background-image:url(bckg.jpeg);
+  background-repeat:none;
+  background-size:cover;
+}
+#navigation{
+  margin-left:24vw;
+  margin-top:2vw;
+  background-image:url(greenbrick.jpeg);
+  border: 0.3vw solid black;
+  border-radius:2vw;
+  height:4vw;
+  width:53vw;
+}
+#header{
+  background-image:url(bricky.png);
+  height:90px;
+  width:98vw;
+  border:3px solid brown;
+  border-radius:25px;
+}
+.navbar{
+  list-style-type: none;
+  float: left;
+  margin-right:0.476vw;
+  text-align: center;
+  font-family:Helvetica;
+}
+a{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: wheat;
+  border-radius:15px;
+	background-color:blue;
+}
+marquee{
+  color:white;
+  font-family:Helvetica;
+  font-size:45;
+}
+a:hover{
+  font-family:Helvetica;
+  text-decoration:none;
+  border:3px solid black;
+	width:23.8vw;
+  padding:10px;
+  color: blue;
+  border-radius:15px;
+	background-color:wheat;
+}
+.pled{
+  color:white;
+  font-size:45;
+  font-family:Helvetica;
+  background-image:url(bricky.png);
+  height:530px;
+  width:96vw;
+  border:3px solid brown;
+  border-radius:25px;
+  padding:10px;
+}
+.f{
+  margin-left:39.651vw;
+  margin-top:10px;
+}
+.newh{
+	font-family:Helvetica;
+	color:transparent;
+	margin-left:15.702vw;
+}
+.namechng{
+	font-family:Helvetica;
+	color:transparent;
+	margin-left:22.205vw;
+}
+.hfour{
+	font-family:Helvetica;
+	color:transparent;
+	margin-left:21.729vw;
+	font-size:25px;
+
+}
+.hsix{
+	font-family:Helvetica;
+	color:transparent;
+	margin-left:22.998vw;
+	font-size:25px;
+}
+.hiddendiv{
+ 	background-color:transparent;
+	color:black;
+  margin-left:5.551vw;
+  margin-top:3.965vw;
+	border: 5px solid transparent;
+  border-radius:50px;
+	
+}
+.sbmt:hover{
+  background-color:black;
+  color:white;
+}

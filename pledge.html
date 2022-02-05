@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Page Information -
+		Created By    : Shaurya Sahu & Prashanth Venkatesh
+		Date          : 30 Jan 2022
+		Project Name  : Natural Disaster Management
+		Page Name.    : Home
+		Competition.  : CodeX
+		Copyright belongs to © Prashanth and Shaurya
+		-->
+    <!--Citations -
+    pixelstalk.com 
+    dreamstime.com 
+    wallpaperaccess.com
+    sheriff.deschutes.org
+    nap.edu
+    quora.com 
+    researchgate.net 
+    mindler.com 
+    oxford education 
+    wikipedia.com 
+    seismo.gov.in
+    brainyquote.com
+    vanfire.com
+    antiguanice.com
+    cdc.gov
+    heartlandfloodhelp.org
+    ready.gov
+    nws.weather.gov
+    redcross.org
+    republicworld.org
+    lifepharmfze.com
+    golaghat.gov.in
+    mass.gov
+    shutterstock.com
+    SkillBloc 
+    -->
+    <title>Pledge</title>
+    <link href="pledge.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id = 'header'>
+      <marquee scrollamount="10" direction="right"><h1>SP Disaster Management</h1></marquee>
+    </div>
+    <div id = "navigation">
+      <nav>
+        <ul>
+          <li class = "navbar"><a href = "index.html"><b>Home</b></a></li>
+          <li class = "navbar"><a href = "aware.html"><b>Awareness</b></a></li>
+          <li class = "navbar"><a href = "info.html"><b>Information</b></a></li>
+          <li class = "navbar"><a href = "register.html"><b>Sign Up</b></a></li>
+          <li class = "navbar"><a href = "pledge.html"><b>Pledge</b></a></li>
+          <li class = "navbar"><a href = "aboutus.html"><b>About Us</b></a></li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+    <div class = "pled">
+      <form onsubmit="return g()" method="post" class = "f">
+      <table id = "tble">
+        <tr>
+          <th class="names">
+          First Name:
+        </th>
+        <td>
+          <input type="text" id="fn" placeholder="firstname" class="user">
+        </td></tr>
+        <tr>
+          <th class="names">
+           Last Name:
+        </th>
+        <td>
+          <input type="text" id="ln" placeholder="lastname" class="user">
+        </td></tr>
+          <tr>
+            <td>
+							<br>
+             <input type="submit" value="Enter" class="sbmt" onclick="g()">
+          </td>
+        </tr>
+      </table>
+    </form>
+    <div id="newdiv" class="hiddendiv">
+		<br>
+		 <h1 class="newh" id="newh">Certificate of Pledge</h1>
+		
+		 <h4 class="hfour" id="hfour">Is awarded to</h4>
+		 
+		 <h4 class="namechng" id="namechng"></h4>
+		 
+		 <h6 class="hsix" id="hsix">for pledging</h6>
+		</div>
+		<br>
+    <script>
+      function g(){
+			  var score = 0;
+        var fnchng = document.getElementById("fn").value;
+        var lnchng = document.getElementById("ln").value;
+        if (fnchng == ""){
+          document.getElementById("fn").style.border = "2px solid red";
+          return false;
+        }
+        else{
+          document.getElementById("fn").style.border = "2px solid green";
+          score = score+1
+        }
+        if (lnchng==""){
+          document.getElementById("ln").style.border = "2px solid red";
+          return false;
+        }
+        else{
+          document.getElementById("ln").style.border = "2px solid green";
+          score = score+1;
+        }
+        if (score == 2){
+           var tablechng = document.getElementById("tble").innerHTML=""
+           var newcolor = document.getElementById("newdiv").style.color="lightsalmon"
+           var neworder = document.getElementById("newdiv").style.border="5px solid black"
+           var newbgcolor = document.getElementById("newdiv").style.backgroundColor="aliceblue"
+           var newheight= document.getElementById("newdiv").style.height="395px"
+           var newwidth = document.getElementById("newdiv").style.width="725px"
+           var newmleft = document.getElementById("newdiv").style.marginLeft="275px"
+           var newhcolor = document.getElementById("newh").style.color="black"
+           var hfourcolor = document.getElementById("hfour").style.color="black"
+           var hsixcolor = document.getElementById("hsix").style.color="black"
+           var namechngcolor = document.getElementById("namechng").style.color="red"
+           var namechngfsize = document.getElementById("namechng").style.fontSize="30px"
+           var namechnginner = document.getElementById("namechng").innerHTML=fnchng+" "+lnchng
+           return true;
+        }
+      }
+    </script>
+</body>
+</html>

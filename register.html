@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Page Information -
+		Created By    : Shaurya Sahu & Prashanth Venkatesh
+		Date          : 30 Jan 2022
+		Project Name  : Natural Disaster Management
+		Page Name.    : Home
+		Competition.  : CodeX
+		Copyright belongs to © Prashanth and Shaurya
+		-->
+    <!--Citations -
+    pixelstalk.com 
+    dreamstime.com 
+    wallpaperaccess.com
+    sheriff.deschutes.org
+    nap.edu
+    quora.com 
+    researchgate.net 
+    mindler.com 
+    oxford education 
+    wikipedia.com 
+    seismo.gov.in
+    brainyquote.com
+    vanfire.com
+    antiguanice.com
+    cdc.gov
+    heartlandfloodhelp.org
+    ready.gov
+    nws.weather.gov
+    redcross.org
+    republicworld.org
+    lifepharmfze.com
+    golaghat.gov.in
+    mass.gov
+    shutterstock.com
+    SkillBloc 
+    -->
+    <title>Register</title>
+    <link href="register.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id = 'header'>
+      <marquee scrollamount="10" direction="right"><h1>SP Disaster Management</h1></marquee>
+    </div>
+    <div id = "navigation">
+      <nav>
+        <ul>
+          <li class = "navbar"><a href = "index.html"><b>Home</b></a></li>
+          <li class = "navbar"><a href = "aware.html"><b>Awareness</b></a></li>
+          <li class = "navbar"><a href = "info.html"><b>Information</b></a></li>
+          <li class = "navbar"><a href = "register.html"><b>Sign Up</b></a></li>
+          <li class = "navbar"><a href = "pledge.html"><b>Pledge</b></a></li>
+          <li class = "navbar"><a href = "aboutus.html"><b>About Us</b></a></li>
+        </ul>
+      </nav>
+    </div>
+    <br>
+    <div id = "reg">
+    <h1 class="head" id="head">Register</h1>
+    <form id="tablechng" onsubmit="return g()" method="post" >  
+      <table>
+        <tr>
+          <td class="label"> 
+            Name:
+          </td>
+          <td>
+            <input type = "text" id = "name" class="user">
+          </td>
+          </tr>
+          <tr>
+          <td class="label">
+            Password:
+          </td>
+          <td>
+            <input type = "password" id = "pass" class="user">
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            Confirm Password:
+          </td>
+          <td>
+            <input type = "password" id = "confirm" class="user">
+          </td>
+        </tr>
+          <tr>
+          <td class="label">
+            Email:
+          </td>
+          <td>
+            <input type = "text" id = "email" class="user">
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            Phone:
+          </td>
+          <td>
+            <input type = "text" id = "phone" class="user">
+          </td>
+        </tr>
+        <tr>
+          <td class="label">
+            DOB:
+          </td>
+          <td>
+            <input type = "date" id = "dob" class="user">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+          <br>
+          <input type = "submit" value = "Enter" class="enter" onclick="g()">
+          </td>
+        </tr>
+        </table>
+      </form>
+    </div>
+  <script>
+  function g(){
+	var score = 0;
+	var name= document.getElementById("name").value;
+	var pass = document.getElementById("pass").value;
+	var confirm = document.getElementById("confirm").value;
+	var ph = document.getElementById("phone").value;
+  var numcheck = /^[0-9]+$/;
+  var emailid = document.getElementById("email").value;
+  var at = emailid.indexOf("@");
+  var dot = emailid.lastIndexOf(".");
+  var curdate = new Date();
+  var dob2 = new Date(document.getElementById("dob").value);
+   if (name == ""){
+     alert("Name field cannot be blank");
+     document.getElementById("name").style.border = "2px solid red";
+     return false;
+   }
+   else{
+     document.getElementById("name").style.border = "2px solid green";
+     score = score+1;
+   }
+   if(pass.length <6){
+     alert("Password : Minimum six characters");
+     document.getElementById("pass").style.border = "2px solid red";
+    return false;
+   }
+   else{
+     document.getElementById("pass").style.border = "2px solid green";
+     score = score+1;
+   }
+   if(pass != confirm){
+     alert("Passwords doesn't Match");
+     document.getElementById("confirm").style.border = "2px solid red";
+     return false;
+   }
+   else{
+     document.getElementById("confirm").style.border = "2px solid green";
+     score = score+1;
+   }
+   if(at ==0 ||  dot < at+2 || dot == emailid.length  - 1  ){
+     alert("Invalid Email Id");
+     document.getElementById("email").style.border = "2px solid red";
+     return false;
+   }
+   else{
+     document.getElementById("email").style.border = "2px solid green";
+     score = score+1;
+   }
+   if( !(ph.match(numcheck)) && !(ph.length >= 12)){
+     alert("Invalid Phone No.");
+     document.getElementById("phone").style.border = "2px solid red";
+     return false;
+   }
+   else{
+     document.getElementById("phone").style.border = "2px solid green";
+     score = score+1;
+   }
+   if(dob2 > curdate){
+     alert("Invalid date");
+     document.getElementById("dob").style.border = "2px solid red";
+     return false;
+   }
+   else{
+     document.getElementById("dob").style.border = "2px solid green";
+     score = score+1;
+   }
+   if (score == 6){
+	   var hreplacement= document.getElementById("head").innerHTML="Thank you for registering "+name+". We will send you an verification email on "+emailid+"<br>"+"<br>"+"You have signed up for funding or helping other NGO's in mitigating to prevent much harm to a disaster."
+	   var formreplacement= document.getElementById("tablechng").innerHTML=" "
+     return true;
+   }
+  }
+  </script>
+  </body>
+  </html>
